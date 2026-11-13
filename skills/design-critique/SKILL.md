@@ -8,6 +8,8 @@ argument-hint: "<Figma URL, screenshot, or description>"
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
 
+<!-- 注記: このリポジトリ (ZETTAI-INC/design-skills) で、上の行のリンク先を ../../CONNECTORS.md から CONNECTORS.md に変更しました。 -->
+
 Get structured design feedback across multiple dimensions.
 
 ## Usage

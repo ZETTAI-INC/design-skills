@@ -8,6 +8,8 @@ argument-hint: "<research data, transcripts, or survey results>"
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
 
+<!-- 注記: このリポジトリ (ZETTAI-INC/design-skills) で、上の行のリンク先を ../../CONNECTORS.md から CONNECTORS.md に変更しました。 -->
+
 Synthesize user research data into actionable insights. See the **user-research** skill for research methods, interview guides, and analysis frameworks.
 
 ## Usage

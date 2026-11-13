@@ -8,6 +8,8 @@ argument-hint: "<Figma URL, URL, or description>"
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
 
+<!-- 注記: このリポジトリ (ZETTAI-INC/design-skills) で、上の行のリンク先を ../../CONNECTORS.md から CONNECTORS.md に変更しました。 -->
+
 Audit a design or page for WCAG 2.1 AA accessibility compliance.
 
 ## Usage

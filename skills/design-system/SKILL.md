@@ -8,6 +8,8 @@ argument-hint: "[audit | document | extend] <component or system>"
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](CONNECTORS.md).
 
+<!-- 注記: このリポジトリ (ZETTAI-INC/design-skills) で、上の行のリンク先を ../../CONNECTORS.md から CONNECTORS.md に変更しました。 -->
+
 Manage your design system — audit for consistency, document components, or design new patterns.
 
 ## Usage
