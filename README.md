@@ -2,6 +2,8 @@
 
 デザイン・UI と、文言（コピー）向けのスキル（AI への作業手順書）19個をまとめたリポジトリです。**Claude Code** と **Codex** の両方で使えます。
 
+![design-skills に入っているスキルの一覧](docs/overview.png)
+
 ## 使い方
 
 ### 1. clone する

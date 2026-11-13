@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<style>
+:root{--ink:#1d1b18;--sub:#5f5a52;--line:#e4dfd6;--bg:#f7f4ee;--card:#fffdf9;--accent:#c2410c;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1600px;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;padding:64px 72px 56px}
+header{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:24px;margin-bottom:36px}
+h1{font-size:56px;font-weight:700;letter-spacing:-.01em;font-family:"SF Mono",Menlo,monospace}
+.lead{font-size:24px;color:var(--sub);margin-top:10px;font-weight:400}
+.badges{display:flex;gap:10px}
+.badge{font-size:18px;font-weight:600;border:1.5px solid var(--ink);border-radius:999px;padding:8px 18px;background:var(--card)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.group{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+.group h2{font-size:24px;font-weight:700;margin-bottom:4px}
+.group .what{font-size:16px;color:var(--sub);margin-bottom:16px}
+.skill{padding:12px 0;border-top:1px solid var(--line)}
+.skill:first-of-type{border-top:none}
+.name{font-family:"SF Mono",Menlo,monospace;font-size:18px;font-weight:600}
+.desc{font-size:15.5px;color:var(--sub);line-height:1.6;margin-top:3px}
+.star{border:2px solid var(--accent);background:#fff7f1;border-radius:12px;padding:12px 14px;margin:4px -6px}
+.star .name{color:var(--accent)}
+.tag{font-family:"Hiragino Sans",sans-serif;font-size:13px;font-weight:700;color:#fff;background:var(--accent);border-radius:6px;padding:2px 8px;margin-left:8px;vertical-align:2px}
+footer{margin-top:32px;display:grid;grid-template-columns:1.35fr 1fr;gap:24px}
+.box{background:var(--ink);color:#f7f4ee;border-radius:16px;padding:26px 30px}
+.box h3{font-size:20px;margin-bottom:14px}
+.step{display:flex;gap:14px;align-items:baseline;margin:10px 0;font-size:16.5px}
+.num{flex:none;width:28px;height:28px;border-radius:50%;background:#f7f4ee;color:var(--ink);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+code{font-family:"SF Mono",Menlo,monospace;font-size:15px;background:rgba(255,255,255,.12);padding:2px 8px;border-radius:5px}
+.note{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 30px;font-size:16px;line-height:1.75;color:var(--sub)}
+.note h3{font-size:20px;color:var(--ink);margin-bottom:10px}
+.note b{color:var(--ink)}
+</style></head><body>
+<header>
+  <div>
+    <h1>design-skills</h1>
+    <p class="lead">デザイン・UI と文言のためのスキル 19個。clone すればすぐ使えます。</p>
+  </div>
+  <div class="badges"><span class="badge">Claude Code</span><span class="badge">Codex</span></div>
+</header>
+
+<div class="grid">
+  <section class="group">
+    <h2>画面を作る</h2><p class="what">新しい画面や LP の見た目を決める</p>
+    <div class="skill"><div class="name">frontend-design</div><div class="desc">テンプレ臭くない、意図のある見た目にする指針</div></div>
+    <div class="skill"><div class="name">ui-ux-pro-max</div><div class="desc">スタイル・配色・フォント・UX ルールを検索できる設計データベース</div></div>
+  </section>
+
+  <section class="group">
+    <h2>動きと触り心地</h2><p class="what">アニメーションやジェスチャーを作る</p>
+    <div class="skill"><div class="name">animate</div><div class="desc">Web（React など）のアニメーションを作る</div></div>
+    <div class="skill"><div class="name">animate-expo</div><div class="desc">React Native / Expo の動きとジェスチャー</div></div>
+    <div class="skill"><div class="name">apple-design</div><div class="desc">Apple 流の滑らかで物理的な動きを Web に応用する</div></div>
+  </section>
+
+  <section class="group">
+    <h2>レビューと引き継ぎ</h2><p class="what">できた案を確かめ、開発に渡す</p>
+    <div class="skill"><div class="name">design-critique</div><div class="desc">使いやすさ・視覚的な階層・一貫性のフィードバック</div></div>
+    <div class="skill"><div class="name">accessibility-review</div><div class="desc">WCAG 2.1 AA に沿ったアクセシビリティ確認</div></div>
+    <div class="skill"><div class="name">design-handoff</div><div class="desc">寸法・トークン・状態をまとめた開発向け仕様書</div></div>
+    <div class="skill"><div class="name">design-system</div><div class="desc">デザインシステムの監査・文書化・拡張</div></div>
+  </section>
+
+  <section class="group">
+    <h2>文言を書く・直す</h2><p class="what">AI っぽさを消し、正確に伝える</p>
+    <div class="skill star"><div class="name">ja-copy-polish<span class="tag">オリジナル</span></div><div class="desc">倒置法や「完全に。」のような断片、誇張語など、日本語の AI 文体を直す。景品表示法・薬機法に触れそうな表現にも印を付ける</div></div>
+    <div class="skill"><div class="name">ux-copy</div><div class="desc">ボタン・エラー・空状態などの UI 文言</div></div>
+    <div class="skill"><div class="name">copywriting</div><div class="desc">LP や料金ページの文言を新しく書く</div></div>
+    <div class="skill"><div class="name">copy-editing</div><div class="desc">既にある文言を磨く、短くする</div></div>
+    <div class="skill"><div class="name">stop-slop</div><div class="desc">英語の AI っぽい書き癖を取り除く</div></div>
+  </section>
+
+  <section class="group">
+    <h2>マーケティング</h2><p class="what">成果につながるページと発信を考える</p>
+    <div class="skill"><div class="name">cro</div><div class="desc">ページやフォームの成約率を上げる改善</div></div>
+    <div class="skill"><div class="name">product-marketing</div><div class="desc">製品の立ち位置・対象者・口調をまとめた土台の資料</div></div>
+    <div class="skill"><div class="name">content-strategy</div><div class="desc">ブログなどで何を書くかを計画する</div></div>
+  </section>
+
+  <section class="group">
+    <h2>ユーザー調査</h2><p class="what">使う人を理解する</p>
+    <div class="skill"><div class="name">user-research</div><div class="desc">調査の計画、インタビューガイドの作成</div></div>
+    <div class="skill"><div class="name">research-synthesis</div><div class="desc">調査結果をテーマと示唆にまとめる</div></div>
+  </section>
+</div>
+
+<footer>
+  <div class="box">
+    <h3>使い方</h3>
+    <div class="step"><span class="num">1</span><span><code>git clone https://github.com/ZETTAI-INC/design-skills.git</code></span></div>
+    <div class="step"><span class="num">2</span><span>そのフォルダで Claude Code か Codex を開けば、すぐ使える</span></div>
+    <div class="step"><span class="num">3</span><span>どのプロジェクトでも使うなら <code>bash install.sh</code></span></div>
+  </div>
+  <div class="note">
+    <h3>呼び出し方</h3>
+    <b>Claude Code</b>：<code style="background:#efe9df">/ja-copy-polish</code> のように入力するか、内容に合う依頼をすると自動で使われます。<br>
+    <b>Codex</b>：<code style="background:#efe9df">$ja-copy-polish</code> のように指定するか、内容に合う依頼をすると自動で使われます。
+  </div>
+</footer>
+</body></html>
